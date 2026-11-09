@@ -40,6 +40,21 @@ class LocalTests(unittest.TestCase):
   for args in [(91,0,'2021-01'),(0,180,'2021-01'),(float('nan'),0,'2021-01'),(0,0,'2099-01'),(0,0,'2021-13'),(0,0,'2014-01')]:
    with self.assertRaises(ValueError):request_spec(*args)
   c=request_spec(30.0444,31.2357,'2021-01');self.assertEqual(len(c['months']),12);self.assertEqual(c['grid']['dimensions'],{'width':256,'height':256})
+ def test_custom_twelve_month_windows(self):
+  from backend.acquisition import latest_start
+  from datetime import date
+  for start,end in [('2015-01','2015-12'),('2017-08','2018-07'),('2020-06','2021-05'),('2024-02','2025-01')]:
+   spec=request_spec(49.4875,8.4660,start)
+   self.assertEqual(spec['months'][0],start)
+   self.assertEqual(spec['months'][-1],end)
+   self.assertEqual(len(spec['windows']),12)
+  self.assertEqual(latest_start(date(2026,11,9)),'2025-11')
+  latest=latest_start()
+  spec=request_spec(49.4875,8.4660,latest)
+  self.assertEqual(len(spec['months']),12)
+  y,m=map(int,latest.split('-'))
+  with self.assertRaises(ValueError):request_spec(49.4875,8.4660,f'{y+(m==12):04d}-{m%12+1:02d}')
+  self.assertEqual(self.client.get('/api/status').json()['earliest_start_month'],'2015-01')
  def test_review_routes(self):
   for path in ['/','/api/status','/api/cases','/api/evidence','/api/cases/mannheim','/api/cases/mannheim/files/map_2021-01.png','/api/cases/mannheim/files/monthly_shares.csv']:
    self.assertEqual(self.client.get(path).status_code,200,path)

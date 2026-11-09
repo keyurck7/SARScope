@@ -13,3 +13,13 @@
 .quality-warnings{padding:0;margin:12px 0;list-style:none;display:grid;gap:8px}
 .quality-warnings li{display:flex;gap:8px;align-items:flex-start;font-size:12px;line-height:1.5;padding:9px;background:rgba(178,121,22,.09);border-radius:7px}
 .quality-warnings li svg{flex:0 0 auto;margin-top:3px}
+
+/* Explicit custom historical period: month + year, with a 12-month preview. */
+.start-month-field{display:grid;gap:8px;min-width:0;align-self:end}
+.start-month-field .field-caption{font-size:10px;color:#7c8796;font-weight:500}
+.month-year-picker{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:7px}
+.month-year-picker select{height:38px;min-width:0;width:100%;border:1px solid #dfe5ec;border-radius:5px;background:#fff;padding:0 7px;font-size:12px;color:#34455b}
+.month-year-picker select:hover{border-color:#acb9ca}
+.month-year-picker select:focus-visible{outline:3px solid #91acf7;outline-offset:2px}
+.selected-window{display:block;font-size:11px;color:#334963;font-weight:600;margin-bottom:5px}
+@media(max-width:720px){.start-month-field{grid-column:1/-1}.month-year-picker{grid-template-columns:1fr 1fr}}

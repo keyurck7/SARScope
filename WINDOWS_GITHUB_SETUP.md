@@ -86,3 +86,19 @@ Next, from the **repository root**:
 - **New result sharing**: GitHub Pages serves the *saved* demo only. Running new authenticated Sentinel-1 jobs requires local `01_START.cmd` or a separately secured inference server.
 
 For architecture and scientific qualifications see [`README.md`](README.md), [`docs/data-and-model.md`](docs/data-and-model.md), and [`docs/deployment.md`](docs/deployment.md).
+
+## D. Choosing any historical 12-month period
+
+The map explorer now provides separate **Start month** and **Start year** selectors. You may start in any month from **January 2015** through the latest start month allowing twelve fully completed calendar months. The selection immediately shows the first and last month of the 12-month range. The **Imagery window** dropdown offers a custom period or a shortcut to the latest completed twelve months.
+
+After pulling a frontend source update, rebuild the local browser interface before restarting SARScope (Node.js 22 required):
+
+```powershell
+cd C:\SARPres\SARScope\frontend
+npm ci
+npm run build
+cd ..\
+.\01_START.cmd
+```
+
+This does not modify the frozen checkpoint or previously saved analyses. Years other than the previously evaluated 2021 reference remain scientifically unvalidated.

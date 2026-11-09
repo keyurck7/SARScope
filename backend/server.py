@@ -46,7 +46,7 @@ def status():
     runtime_ok=runtime.get('status')=='PASS' and runtime.get('checkpoint_sha256')==SHA
     return {'runtime_checked':runtime_ok,'preview':PREVIEW,'model_present':ck.exists(),'dependencies':deps,'credentials_present':credentials,
         'ready':ck.exists() and deps and credentials and runtime_ok and not PREVIEW,'device':'CPU','workspace':None if PREVIEW else str(WORKSPACE),'active_job':active,
-        'checkpoint_sha256':SHA,'classes':CLASSES_UI,'latest_start_month':latest_start()}
+        'checkpoint_sha256':SHA,'classes':CLASSES_UI,'earliest_start_month':'2015-01','latest_start_month':latest_start()}
 @app.get('/api/cases')
 def cases():
     result=[{'id':'mannheim','name':'Mannheim, Germany','period':'2021-01','source':'Reviewed server result'}]
