@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE",
+  "inference_complete": true,
+  "reference_status": "NOT_APPLICABLE",
+  "completed_at": "2026-11-09T14:04:15.863742+00:00",
+  "checkpoint_sha256": "a52e9f4f69d4647dfad7b6b01fb3613070f91201aa4dceb004db410f6b79b2b5",
+  "training_launched": false,
+  "observed_pixel_months": 786432,
+  "total_pixel_months": 786432
+}

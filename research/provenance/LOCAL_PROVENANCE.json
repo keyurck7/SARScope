@@ -1,0 +1,63 @@
+{
+  "checkpoint_sha256": "a52e9f4f69d4647dfad7b6b01fb3613070f91201aa4dceb004db410f6b79b2b5",
+  "adaptations": [
+    "CPU device, one-month inference batches, at most four Torch threads",
+    "Verify restored inference assets using the frozen checkpoint digest and dataset manifest without reopening the 5 GiB bundle on every run",
+    "React/FastAPI app and display-only region annotations/radar underlays",
+    "Resolve latest completed 12-month window on the server; no change to retrospective input semantics",
+    "Acquisition timestamp metadata, source inventory display and annual-reference diagnostics",
+    "Default genuine radar overlay and export inclusion; repeated-case display refresh"
+  ],
+  "fixed_model_architecture": true,
+  "training_launched": false,
+  "source_comparison": {
+    "common.py": {
+      "upstream_sha256": "90673ee5aa70e07a1f127f6d8afdfdc3b6581490b99b2b36f3de1123d7036a06",
+      "local_sha256": "10aada317a6c963e35f509df9f562c86c5b9951a1878e52d35974c2c2be15cb9",
+      "unchanged": false
+    },
+    "model.py": {
+      "upstream_sha256": "06a24c4db6f0f3a006f0b8217710a6bc6783064a4c24bef4c440745335935383",
+      "local_sha256": "5aa2a83cc36b0b375aaf1f4c53c212c6d4274e7367b5ef60d64ec2c1d0eac62f",
+      "unchanged": false
+    },
+    "pipeline.py": {
+      "upstream_sha256": "e19615f3802330e91175fe5b49e5025696488f9e5bcf58506ef31fa13164dfd0",
+      "local_sha256": "e8daea8283a16a5b1616633033dd59b55e1a740d8afc228d964b35a64b1e08f3",
+      "unchanged": false
+    },
+    "accounting.py": {
+      "upstream_sha256": "a848c373eaac8b272861cee0cdcdf702b1b050020310fe28fec0a765e6bf79f1",
+      "local_sha256": "a848c373eaac8b272861cee0cdcdf702b1b050020310fe28fec0a765e6bf79f1",
+      "unchanged": true
+    },
+    "presentation.py": {
+      "upstream_sha256": "597251b4b4aa8cdc990a26f67c12da49de6e6855afc8a11e494af594a57368a0",
+      "local_sha256": "597251b4b4aa8cdc990a26f67c12da49de6e6855afc8a11e494af594a57368a0",
+      "unchanged": true
+    },
+    "vendor/sarscope_baseline/core.py": {
+      "upstream_sha256": "c8e5c7c5a5df362c7ec2c8634ca7d27c0c93423fdf2e1501d4d09f71cff6e06d",
+      "local_sha256": "c8e5c7c5a5df362c7ec2c8634ca7d27c0c93423fdf2e1501d4d09f71cff6e06d",
+      "unchanged": true
+    },
+    "vendor/s1lulc/gee.py": {
+      "upstream_sha256": "de9977af24a64a0d2c6d6e5e8451a36d93cd7d39ebe4f5c262f5fa40c489fe2b",
+      "local_sha256": "de9977af24a64a0d2c6d6e5e8451a36d93cd7d39ebe4f5c262f5fa40c489fe2b",
+      "unchanged": true
+    },
+    "vendor/s1lulc/geo.py": {
+      "upstream_sha256": "c22c2b0f2241c5be6838832fee907b17396d99514a8cf543079760ea1810108d",
+      "local_sha256": "c22c2b0f2241c5be6838832fee907b17396d99514a8cf543079760ea1810108d",
+      "unchanged": true
+    },
+    "vendor/control_train.py": {
+      "upstream_sha256": "f7414caa3d7004b897be50bad463cdb04e5ba777582d77641131c956c69c978a",
+      "local_sha256": "f7414caa3d7004b897be50bad463cdb04e5ba777582d77641131c956c69c978a",
+      "unchanged": true
+    }
+  },
+  "sample_case": "Original returned Mannheim case 4c50a61fa03e274d, January\u2013December 2021. Sample map bytes unchanged.",
+  "new_location_inference_executed_in_build_environment": false,
+  "windows_launch_executed_in_build_environment": false
+}

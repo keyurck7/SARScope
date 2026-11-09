@@ -1,0 +1,10 @@
+{
+  "version":"2.0.0",
+  "tasks":[
+    {"label":"SARScope: run saved-case viewer","type":"shell","command":"python serve.py --open","group":"build","problemMatcher":[]},
+    {"label":"SARScope: run backend tests","type":"shell","command":"python -m unittest discover -s tests -v","group":"test","problemMatcher":[]},
+    {"label":"SARScope: verify repository","type":"shell","command":"python scripts/repository_audit.py","problemMatcher":[]},
+    {"label":"SARScope: build React UI","type":"shell","command":"npm ci && npm run build","options":{"cwd":"${workspaceFolder}/frontend"},"problemMatcher":[]},
+    {"label":"SARScope: inspect model","type":"shell","command":"python scripts/model_assets.py status","problemMatcher":[]}
+  ]
+}

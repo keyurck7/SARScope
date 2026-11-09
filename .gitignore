@@ -1,0 +1,43 @@
+# Local runtimes, tokens, and credential material
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+**/node_modules/
+workspace/
+private/
+secrets/
+.vscode/*.code-workspace
+**/.DS_Store
+.config/
+credentials
+*credentials.json
+*service-account*.json
+*.pem
+*.key
+# Training inputs, models and bulk artifacts must use separate access-controlled storage.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.h5
+*.npy
+*.npz
+*.parquet
+*.zarr/
+*.zip
+!sample/cases/*/case_export.zip
+*.tar
+*.tar.gz
+*.7z
+*.log
+# Generated transient files
+.coverage
+htmlcov/
+# Saved exemplar GeoTIFFs are intentionally included and small.

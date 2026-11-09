@@ -1,0 +1,7 @@
+{
+  "version":"0.2.0",
+  "configurations":[
+    {"name":"SARScope: Python API / saved cases","type":"debugpy","request":"launch","program":"${workspaceFolder}/serve.py","args":["--port","8765"],"console":"integratedTerminal","cwd":"${workspaceFolder}"},
+    {"name":"SARScope: read-only public preview","type":"debugpy","request":"launch","program":"${workspaceFolder}/serve.py","args":["--preview","--port","8765"],"console":"integratedTerminal","cwd":"${workspaceFolder}"}
+  ]
+}

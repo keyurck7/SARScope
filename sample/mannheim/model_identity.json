@@ -1,0 +1,23 @@
+{
+  "checkpoint_sha256": "a52e9f4f69d4647dfad7b6b01fb3613070f91201aa4dceb004db410f6b79b2b5",
+  "dataset_id": "6c3b62d7d71f22d4d098b9fbaf497daf45fe5c3c4e2198fa62cb1db17c4662cf",
+  "checkpoint_relative_path": "sarscope-baseline-20261108/fp32_control_seed42/temporal/best.pt",
+  "selection": "Unweighted FP32 temporal control; seed 42; best validation mIoU; epoch 13",
+  "test_used_for_selection": false,
+  "code_id": "65672dbb3e54125e0e3803a317f96fb4ef0138b07558eab43eb39a529c4c04ce",
+  "processor": "legacy-linear-monthly-lee5-enl4.4-strict-support-v1",
+  "classes": [
+    "water",
+    "trees",
+    "grass",
+    "flooded_vegetation",
+    "crops",
+    "shrub_and_scrub",
+    "built",
+    "bare",
+    "snow_and_ice"
+  ],
+  "precision": "FP32; TF32 disabled; AMP disabled",
+  "device": "NVIDIA RTX A6000",
+  "torch": "2.9.0+cu128"
+}

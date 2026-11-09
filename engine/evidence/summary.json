@@ -1,0 +1,11 @@
+{
+  "completed_epochs": 30,
+  "best_validation_mIoU": 0.36401055172550206,
+  "dataset_id": "6c3b62d7d71f22d4d098b9fbaf497daf45fe5c3c4e2198fa62cb1db17c4662cf",
+  "smoke_only": false,
+  "train_samples": 9757,
+  "validation_samples": 1979,
+  "test_evaluated": false,
+  "resume_boundary": "Last fully checkpointed epoch",
+  "peak_cuda_allocated_bytes": 1287901184
+}

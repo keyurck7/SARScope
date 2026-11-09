@@ -1,0 +1,20 @@
+{
+  "classes": [
+    "water",
+    "trees",
+    "grass",
+    "flooded_vegetation",
+    "crops",
+    "shrub_and_scrub",
+    "built",
+    "bare",
+    "snow_and_ice"
+  ],
+  "area_method": "UTM projected area; 100 m\u00b2 per 10 m pixel (not geodesic area)",
+  "monthly_denominator": "Full fixed AOI, including unobserved; additional observed-only percentages provided",
+  "change_denominator": "Pixels observed in both compared months; common coverage reported for every pair",
+  "change_unit": "percentage points; after minus before, on the same pixels",
+  "interpretation": "Predicted land-cover changes; seasonality and classification error can produce apparent transitions",
+  "no_common_support": "Null changes, never zero change",
+  "area_km2": 6.5536
+}

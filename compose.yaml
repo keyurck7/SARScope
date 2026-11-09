@@ -1,0 +1,12 @@
+services:
+  preview:
+    build: .
+    environment:
+      SARSCOPE_PREVIEW: '1'
+    ports:
+      - '127.0.0.1:8765:8765'
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp

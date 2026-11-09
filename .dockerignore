@@ -1,0 +1,17 @@
+.git
+.github
+.venv
+**/node_modules
+workspace
+.env
+.env.*
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npy
+*.npz
+*.parquet
+*.log
+research
+sample/cases/*/case_export.zip

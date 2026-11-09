@@ -1,0 +1,89 @@
+{
+  "status": "descriptive_review_not_accuracy_measurement",
+  "thresholds": {
+    "limited_scene_count": "<=2 tile-intersecting radar scenes",
+    "incomplete_coverage": "<95% labeled AOI",
+    "dominant_class": ">=90% same class",
+    "large_monthly_shift": ">=5 percentage points any class; snow-and-ice separately reviewed"
+  },
+  "sites": [
+    {
+      "site": "Cairo, Egypt",
+      "months": 12,
+      "scene_counts": [
+        5,
+        5,
+        6,
+        7,
+        6,
+        6,
+        8,
+        7,
+        5,
+        5,
+        5,
+        5
+      ],
+      "month_review_trigger_counts": {},
+      "first_month": "2025-11",
+      "last_month": "2026-10",
+      "checkpoint_sha256": "a52e9f4f69d4647dfad7b6b01fb3613070f91201aa4dceb004db410f6b79b2b5",
+      "archive_sha256": "dd4bb4bf10fd7062f94893b2138974f65dea596f197496ca48f449153f688a66"
+    },
+    {
+      "site": "Mauritania, Sahara",
+      "months": 12,
+      "scene_counts": [
+        5,
+        6,
+        4,
+        5,
+        5,
+        7,
+        5,
+        6,
+        6,
+        4,
+        6,
+        6
+      ],
+      "month_review_trigger_counts": {
+        "dominant_class": 12,
+        "large_monthly_shift": 1,
+        "snow_ice_surge": 1
+      },
+      "first_month": "2025-11",
+      "last_month": "2026-10",
+      "checkpoint_sha256": "a52e9f4f69d4647dfad7b6b01fb3613070f91201aa4dceb004db410f6b79b2b5",
+      "archive_sha256": "b43796afef80eeb06ba8691b15cab064f60d25188919197a54bda3259e8600af"
+    },
+    {
+      "site": "Queens, New York",
+      "months": 12,
+      "scene_counts": [
+        3,
+        2,
+        3,
+        1,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2
+      ],
+      "month_review_trigger_counts": {
+        "dominant_class": 12,
+        "limited_scene_count": 6
+      },
+      "first_month": "2025-11",
+      "last_month": "2026-10",
+      "checkpoint_sha256": "a52e9f4f69d4647dfad7b6b01fb3613070f91201aa4dceb004db410f6b79b2b5",
+      "archive_sha256": "2c72a9575226891a978279679b9c4ed18696af2f36f49d21f8617d8e992696bb"
+    }
+  ],
+  "model_inputs_changed": false,
+  "model_weights_changed": false
+}

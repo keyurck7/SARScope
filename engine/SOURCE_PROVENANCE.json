@@ -1,0 +1,32 @@
+{
+  "vendor/sarscope_baseline/core.py": {
+    "source": "SARScope_Baseline/sarscope_baseline/core.py",
+    "sha256": "c8e5c7c5a5df362c7ec2c8634ca7d27c0c93423fdf2e1501d4d09f71cff6e06d",
+    "unchanged": true
+  },
+  "vendor/control_train.py": {
+    "source": "SARScope_FP32_Control/control_train.py",
+    "sha256": "f7414caa3d7004b897be50bad463cdb04e5ba777582d77641131c956c69c978a",
+    "unchanged": true
+  },
+  "vendor/setup_guard.py": {
+    "source": "SARScope_Baseline/start.py",
+    "sha256": "5cea8b66b1b111edcbc36dbd3e459b5f8a7ce31c7315e044d1ad8e683c12b7a6",
+    "unchanged": true
+  },
+  "vendor/s1lulc/gee.py": {
+    "source": "review/original/s1lulc/gee.py",
+    "sha256": "de9977af24a64a0d2c6d6e5e8451a36d93cd7d39ebe4f5c262f5fa40c489fe2b",
+    "unchanged": true
+  },
+  "vendor/s1lulc/geo.py": {
+    "source": "review/original/s1lulc/geo.py",
+    "sha256": "c22c2b0f2241c5be6838832fee907b17396d99514a8cf543079760ea1810108d",
+    "unchanged": true
+  },
+  "vendor/s1lulc/config.py": {
+    "source": "review/original/s1lulc/config.py",
+    "sha256": "e9f1ba9787c30cc84228c9c33cccdb71d781d382ddd98ff14214d34f0e89df06",
+    "unchanged": true
+  }
+}

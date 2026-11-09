@@ -1,0 +1,34 @@
+{
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "paired_delta_mIoU_pp": {
+    "mean": 0.2599801517344606,
+    "sample_sd": 1.1286122947908834,
+    "min": -0.5539904981780364,
+    "max": 1.5483590027413119
+  },
+  "paired_delta_OA_pp": {
+    "mean": -2.197691791755955,
+    "sample_sd": 2.3039733043034056,
+    "min": -4.53400102221766,
+    "max": 0.07252333528326993
+  },
+  "positive_mIoU_pairs": 1,
+  "control_mIoU_percent": {
+    "mean": 36.446405514250216,
+    "sample_sd": 0.3663571428190332,
+    "min": 36.10483479840376,
+    "max": 36.83332657179669
+  },
+  "balanced_mIoU_percent": {
+    "mean": 36.706385665984676,
+    "sample_sd": 1.201675855465155,
+    "min": 35.55084430022572,
+    "max": 37.949414175291516
+  },
+  "interpretation": "Descriptive seed variation on the same validation regions; no significance or independent accuracy claim",
+  "test_evaluated": false
+}

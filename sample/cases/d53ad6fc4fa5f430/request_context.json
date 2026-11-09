@@ -1,0 +1,7 @@
+{
+  "period_mode": "latest_completed",
+  "resolved_start_month": "2025-11",
+  "requested_at": "2026-11-09T13:48:06.388152+00:00",
+  "imagery_policy": "Download missing months; reuse only checksum-verified cached months. Not a real-time feed.",
+  "temporal_validation": "Model trained on 2021; other years are not separately validated."
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "sarscope.paired-seeds/v1",
+  "runner_sha256": "2a0414cbddab04f87b68c8e1faddb324ab05f0d83ccbb5d7f39f0d8b350c3368",
+  "expected_sources": {
+    "SARScope_Baseline/sarscope_baseline": {
+      "__init__.py": "d681e63868ce2f7c9eacc8b0fb7c6b4de90fc4facfd8105dc808914dc381856a",
+      "core.py": "c8e5c7c5a5df362c7ec2c8634ca7d27c0c93423fdf2e1501d4d09f71cff6e06d",
+      "prepare.py": "549b12048a031929fcdf2aad73f493d3acede3ff2985e9fe2f1e2ff2dad529d0",
+      "train.py": "cba7b839b7d9817837f4559326113b4c1b0aa2830bb381907dcc0e501454a143"
+    },
+    "SARScope_FP32_Control": {
+      "control_train.py": "f7414caa3d7004b897be50bad463cdb04e5ba777582d77641131c956c69c978a",
+      "run.py": "bc63ffa459866779bd98a46f249388791b7790fdada1465ab1382f5c90252cc6"
+    },
+    "SARScope_Class_Balance": {
+      "balance_train.py": "d69ba67398fc66b5130fe71e72af8608048bf04588cd2c682cfa1b5ea04f16c1",
+      "run.py": "01d19cd8c94c2b7d0a4147925585df222d612e103f2decde081f765f46be3beb"
+    }
+  },
+  "dataset_id": "6c3b62d7d71f22d4d098b9fbaf497daf45fe5c3c4e2198fa62cb1db17c4662cf",
+  "new_seeds": [
+    123,
+    2026
+  ],
+  "existing_seed": 42,
+  "config_except_seed": {
+    "variant": "temporal",
+    "encoder": "resnet34",
+    "encoder_weights": "imagenet",
+    "epochs": 30,
+    "batch_size": 8,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "limit_samples": 0,
+    "device": "cuda"
+  },
+  "selection": "Highest full-validation mIoU within 30 epochs; earliest tie",
+  "purpose": "Replicate the fixed loss comparison; do not select a favorable seed",
+  "test_evaluated": false
+}

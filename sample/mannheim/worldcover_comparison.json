@@ -1,0 +1,183 @@
+{
+  "OA": 0.8093961992557769,
+  "mIoU": 0.2629567443133484,
+  "IoU": [
+    0.6991935483870968,
+    0.0730598549626583,
+    0.0008521516829995739,
+    null,
+    0.0,
+    null,
+    0.8046349108473357,
+    0.0,
+    null
+  ],
+  "F1": [
+    0.8229710488846701,
+    0.13617107121242686,
+    0.0017028522775649213,
+    null,
+    0.0,
+    null,
+    0.8917425968109339,
+    0.0,
+    null
+  ],
+  "classes": [
+    "water",
+    "trees",
+    "grass",
+    "flooded_vegetation",
+    "crops",
+    "shrub_and_scrub",
+    "built",
+    "bare",
+    "snow_and_ice"
+  ],
+  "reference_support": [
+    6766,
+    8854,
+    2345,
+    0,
+    27,
+    0,
+    47297,
+    14,
+    0
+  ],
+  "predicted_support": [
+    5876,
+    1060,
+    4,
+    0,
+    1,
+    0,
+    58063,
+    299,
+    0
+  ],
+  "confusion_true_rows_predicted_columns": [
+    [
+      5202,
+      6,
+      2,
+      0,
+      1,
+      0,
+      1469,
+      86,
+      0
+    ],
+    [
+      93,
+      675,
+      0,
+      0,
+      0,
+      0,
+      8060,
+      26,
+      0
+    ],
+    [
+      358,
+      305,
+      2,
+      0,
+      0,
+      0,
+      1519,
+      161,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      25,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      222,
+      73,
+      0,
+      0,
+      0,
+      0,
+      46977,
+      25,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      13,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "absent_class_policy": "Absent in both: null; false-positive-only: IoU zero",
+  "reference": "ESA WorldCover 2021 v200; external annual map, not monthly ground truth",
+  "status": "COMPLETE",
+  "taxonomy_mapping": {
+    "80": "water",
+    "10": "trees",
+    "30": "grass",
+    "90": "flooded_vegetation",
+    "40": "crops",
+    "20": "shrub_and_scrub",
+    "50": "built",
+    "60": "bare",
+    "70": "snow_and_ice"
+  },
+  "excluded_codes": [
+    0,
+    95,
+    100
+  ],
+  "annual_prediction": "Unique modal class across 12 predictions; require all 12 valid observations; ties excluded",
+  "comparable_pixels": 65303,
+  "comparable_aoi_percent": 99.64447021484375,
+  "caveat": "Broad crosswalk only: herbaceous wetland is not identical to flooded vegetation. Both products have errors and share sensor families; agreement is not independent ground-truth accuracy."
+}

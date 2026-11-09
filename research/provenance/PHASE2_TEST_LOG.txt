@@ -1,0 +1,14 @@
+PHASE 2 PYTHON REGRESSION: 23/23 PASS (9 Nov 2026)
+Original source and quality rules tested under the container environment.
+Frontend source amended but bundled dist not rebuilt (npm registry unreachable).
+
+Verified: sarscope-baseline-20261108/fp32_control_seed42/temporal/best.pt
+Verified: sarscope-baseline-20261108/prepared/stats.json
+Verified: sarscope-baseline-20261108/prepared/manifest.json
+Window starts 2021-01: 12 completed calendar months; not a live satellite feed.
+Checking the frozen checkpoint and preparing CPU inference…
+Preparing radar underlays and map exports…
+----------------------------------------------------------------------
+Ran 23 tests in 1.525s
+
+OK
